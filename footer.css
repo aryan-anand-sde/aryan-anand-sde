@@ -1,0 +1,18 @@
+@import url(style.css);
+
+#forYOU {
+  border: 3px dashed var(--colour2);
+  border-bottom: none;
+  padding-bottom: 0px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: rgb(255, 255, 255, 0.75);
+}
+footer {
+  color: var(--colour1);
+  border: 3px dashed var(--colour2);
+  border-bottom: none;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: var(--colour3);
+}

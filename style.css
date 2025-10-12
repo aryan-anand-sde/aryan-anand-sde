@@ -1,0 +1,39 @@
+:root {
+  --colour1: #03045e;
+  --colour2: #0077b6;
+  --colour3: #00b4d8;
+  --colour4: #90e0ef;
+  --colour5: #caf0f8;
+}
+body {
+  background-color: var(--colour5);
+}
+a {
+  color: var(--colour2);
+  text-decoration: none;
+}
+hr {
+  border: double;
+  border-color: var(--colour5);
+}
+.container {
+  border: 3px solid var(--colour3);
+  border-radius: 5px;
+  background-color: var(--colour4);
+}
+#element {
+  color: var(--colour1);
+  /* font-weight: bolder;
+  font-size: xx-large; */
+}
+.main-color {
+  color: var(--colour1);
+}
+.offcanvas {
+  color: var(--colour1);
+  background-color: var(--colour5);
+}
+
+#skills img {
+  height: 5rem;
+}

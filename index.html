@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Anand</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Profile-removebg.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Oswald:wght@200..700&family=Playfair+Display:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="backside">
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-bold oswald-500" href="#start" style="padding-left: 25px;"><i
+                    class="bi bi-person-circle"></i> Aryan Anand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fs-5 fw-semibold" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certification">Certifications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert"><span
+            class="badge text-bg-success">New</span> Thank you for visiting my portfolio, I am currently working on it
+        to make it more interactive and user-friendly. Stay tuned for updates!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <main>
+        <div class="container my-3 p-5">
+            <div id="start" class="row">
+                <div id="screen-size" class="col-9 text-center">
+                    <h1 class="main-color lh-base gradient-text playfair-display-700">Hello There, I'm Aryan Anand</h1>
+                    <h2 class="main-color lh-base gradient-text playfair-display-700">2nd Year B.Tech Computer Science &
+                        Engineering</h2>
+                    <h3 class="main-color lh-base gradient-text playfair-display-700">Student at MNNIT Allahabad and a
+                        Passionate</h3>
+                    <!-- Element to contain animated typing -->
+                    <span id="element" class="fs-1 fw-bold playfair-display-900"></span>
+                    <br>
+                    <!-- Load library from the CDN -->
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <!-- Setup and start animation! -->
+                    <script>
+                        var typed = new Typed('#element', {
+                            strings: ['Coder', 'Designer', 'Problem Solver', 'Web Developer'],
+                            typeSpeed: 150,
+                            backSpeed: 100,
+                            backDelay: 250,
+                            startDelay: 0,
+                            loop: true,
+                        });
+                    </script>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+                        <span role="status" class="fw-semibold">Key Highlights</span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title fw-bold" id="offcanvasExampleLabel">KEY Highlights</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body text-start fw-semibold">
+                            <div>
+                                <ul>
+                                    <li>Cracked IIT JEE Mains</li>
+                                    <li>Cracked IIT JEE Advanced</li>
+                                    <li>4th Prize in Doodle Bot (1st Year)</li>
+                                    <li>GSSoC Contributor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" href="https://codolio.com/profile/aryan_anand" target="_blank"
+                        role="button">Coding Profile</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary m-3 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Show Resume
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome to the Resume section
+                                    </h1>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="/Assets/Resume.pdf" target="_blank">Show Resume</a>
+                                    <span>or</span>
+                                    <a href="/path/to/your/document.pdf" download="Aryan Anand.pdf">Download
+                                        Resume</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col card" style="width: 25rem;">
+                    <a href="https://www.linkedin.com/in/aryan-anand-sde/" target="_blank">
+                        <img src="/Assets/Profile-removebg.png" class="card-img-top" alt="Profile Picture">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Aryan Anand</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Experience</h3>
+            <br>
+            <div class="row">
+                <div class="col-1"><img src="/Assets/GSSoC.png" class="icons img-fluid"></div>
+                <div class="col p-0 fs-6 fw-semibold">
+                    <p class="lh-1 fs-5 fw-bold">Open Source Developer - GirlScript Summer of Code</p>
+                    <p class="lh-1"><i class="bi bi-dot"></i>September, 2025 --> Present</p>
+                    <p class="lh-1">Prayagraj, Uttar Pradesh, India (Remote)</p>
+                    <p>TO BE ADDED</p>
+                    <p class="lh-1"><a
+                            href="https://drive.google.com/file/d/1zaEF0CGdp3mMbLFHeDBk6aezrAgLGgj6/view?usp=drivesdk"
+                            target="_blank">ID <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                            href="https://drive.google.com/file/d/1lImzChGM2S---DtoNojXreEe5RTEMKf0/view?usp=drivesdk"
+                            target="_blank">Badge
+                            <i class="bi bi-box-arrow-up-right"></i></a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-1"><img src="/Assets/Gap Year.png" class="icons img-fluid"></div>
+                <div class="col p-0 fs-6 fw-semibold">
+                    <p class="lh-1 fs-5 fw-bold">Gap Year - Career Break</p>
+                    <p class="lh-1"><i class="bi bi-dot"></i>April, 2023 --> June, 2024</p>
+                    <p class="lh-1">Gorakhpur, Uttar Pradesh, India (Remote)</p>
+                    <p>I was preparing for my IIT-JEE Advanced Examination and was so happy that I cracked the exam,
+                        also my Mathematics has improved a lot since then.</p>
+                    <p class="lh-1"><a href="https://certificate.getmarks.app/JWSEeT8" target="_blank">Einstein Award <i
+                                class="bi bi-box-arrow-up-right"></i></a> | <a
+                            href="https://certificate.getmarks.app/Vkis6Jx" target="_blank">Musk Award <i
+                                class="bi bi-box-arrow-up-right"></i></a> | <a
+                            href="https://drive.google.com/file/d/17T0WK-QTfNTPWsJzV3LC74SVn8zaHbur/view?usp=drivesdk"
+                            target="_blank">Tesla Award <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                            href="https://certificate.getmarks.app/efYf9A6" target="_blank">Newton Award <i
+                                class="bi bi-box-arrow-up-right"></i></a> | <a
+                            href="https://certificate.getmarks.app/7NF4yBL" target="_blank">Alzahen Award <i
+                                class="bi bi-box-arrow-up-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Education</h3>
+            <br>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Motilal Nehru National Institute of Technology</p>
+                <p class="lh-1">B.Tech - Computer Science & Engineering</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>July, 2024 --> June, 2028</p>
+                <p><span class="fw-bold">Grade :</span> # CPI (scale of 10)</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/1qXqlaDsHzIRoSwGZzI6fv5R33oaVGQZF/view?usp=drivesdk"
+                        target="_blank">C language <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://unstop.com/certificate-preview/b52a03b6-91f3-4892-9f39-4c629bd06e6c"
+                        target="_blank">Family Man Quiz <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://certificate.hack2skill.com/user/gdgscparticipation/2025H2S01GSC-P07646"
+                        target="_blank">Solution Challenge 2025 <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://www.naukri.com/campus/certificates/young_turks25_round_1_participation/v0/68d9b7f3abe8a1724df789f7?utm_source=certificate&utm_medium=copy&utm_campaign=68d9b7f3abe8a1724df789f7"
+                        target="_blank">Naukri Campus Young Turks 25 <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Little Flower School, Rapti Nagar IV</p>
+                <p class="lh-1">ISC - Senior Secondary Education (Class 12th)</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>April, 2021 --> March, 2023</p>
+                <p><span class="fw-bold">Grade :</span> 85.60% (Overall)<br>&nbsp;&nbsp;&nbsp;Mathematics :
+                    92%<br>&nbsp;&nbsp;&nbsp;Computer Application : 93%</p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Little Flower School, Rapti Nagar IV</p>
+                <p class="lh-1">ICSE - Secondary Education (Class 10th)</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>April, 2011 --> March, 2021</p>
+                <p><span class="fw-bold">Grade :</span> 86.10% (Overall)<br>&nbsp;&nbsp;&nbsp;Mathematics :
+                    90%<br>&nbsp;&nbsp;&nbsp;Computer Application : 95%</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/17r8hPRi1D2Iurm4jvoGzL8oZx6_nhk_X/view?usp=drivesdk"
+                        target="_blank">Discovery School Super League <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://drive.google.com/file/d/17bgPdHN8VGSy-YlxzpR_TLJ0dCSF7FwY/view?usp=drivesdk"
+                        target="_blank">Excellent Performance Award <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://drive.google.com/file/d/17S-Wrk28NNwcfF86SAp4J6q8LZjYOQ3r/view?usp=drivesdk"
+                        target="_blank">Excellent Performance Award <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://drive.google.com/file/d/17Ox7TtCcnAlTkGXPZWPJGxDmSnd_GBYy/view?usp=drivesdk"
+                        target="_blank">Excellent Performance Award <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+        </div>
+
+        <div id="achivements" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Achivements</h3>
+            <br>
+        </div>
+
+        <div id="skills" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Skills</h3>
+            <br>
+            <img class="my-3 img-fluid" src="/Assets/JavaScript.png" alt="Javascript">
+            <img class="my-3 img-fluid" src="/Assets/Java.png" alt="Java">
+            <img class="my-3 img-fluid" src="/Assets/HTML.png" alt="HTML">
+            <img class="my-3 img-fluid" src="/Assets/CSS.png" alt="CSS">
+            <img class="my-3 img-fluid" src="/Assets/React.png" alt="React">
+            <img class="my-3 img-fluid" src="/Assets/MongoDB.png" alt="Mongo DB">
+            <img class="my-3 img-fluid" src="/Assets/Node Js.png" alt="Node.js">
+            <img class="my-3 img-fluid" src="/Assets/Express.png" alt="Express.js">
+            <img class="my-3 img-fluid" src="/Assets/GitLab.png" alt="GitLab">
+            <img class="my-3 img-fluid" src="/Assets/GitHub.png" alt="GitHub">
+            <img class="my-3 img-fluid" src="/Assets/git.png" alt="Git">
+        </div>
+
+        <div id="projects" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Projects</h3>
+            <br>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Coding Profile Data</p>
+                <p>I made this website where you can get the stats of your various coding profiles.</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>September, 2025</p>
+                <p><i class="bi bi-github"></i> <a href="https://github.com/aryan-anand-sde/Coding-Platform-Data"
+                        target="_blank">Repository <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://coding-data-aryan.tech/" target="_blank">Link <i
+                            class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Automate Whatsapp with ChatGPT</p>
+                <p>In this projext, I integrated ChatGPT to work with Whatsapp, so you can message and
+                    get response from ChatGPT in your Whatsapp chat only.</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>July, 2025</p>
+                <p><a href="https://drive.google.com/file/d/149TpE0fP8My2qryNz45ypzF6TJtS61XQ/view?usp=drivesdk"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Doodle Bot - OpenCV</p>
+                <p>It was a team project and we used the OpenCV library of Python for image detection
+                    and processing to find the
+                    path of our vision guided robot (like 'Left', 'Right', and 'Finish') and finally terminated with
+                    a light sign.</p>
+                <p class="lh-1"><i class="bi bi-dot"></i>October, 2024 --> November, 2024</p>
+                <p><i class="bi bi-github"></i> <a href="https://github.com/aryan-anand-sde/DoodleBot_1st"
+                        target="_blank">Repository <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+        </div>
+
+        <div id="profiles" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Coding &amp; Development</h3>
+            <br>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> Leetcode <a
+                        href="https://leetcode.com/u/a_r_y_a_n_anand/" target="_blank"><i
+                            class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+                <ul id="leetcode-list">
+                    <!-- Leetcode data will be here -->
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="certification" class="container my-3 p-3">
+            <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Certification</h3>
+            <br>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Postman API Fundamentals Student Expert</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Testing, Scripting,
+                    Postman API, Application Programming Interfaces</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/1TMu4wphAwIA4b1PF8-Gd9CC12pURxPbg/view?usp=drivesdk"
+                        target="_blank">Badge <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://badgr.com/public/assertions/hgxbIk-BRIOpN0iPLWRxzg?identity__email=aryanaa2005%40gmail.com"
+                        target="_blank">Verify <i class="bi bi-box-arrow-up-right"></i></a> | <a
+                        href="https://drive.google.com/file/d/1i6AJ8YqXtg2aIlfqeTMWC44RvBR0Ep5c/view?usp=drivesdk"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Java (Basic) Certification</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Java</p>
+                <p class="lh-1"><a href="https://www.hackerrank.com/certificates/9fea6f714d5e"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">AI for Beginners</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Artificial
+                    Intelligence</p>
+                <p class="lh-1"><a href="https://www.life-global.org/certificate/89c96fd2-132d-47a8-9eca-8a888279391f"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">C Certification</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> C language</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/1rO6A_MBQXr43_taR0Te-UQPkO1ZOZUu3/view?usp=drivesdk"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Data Science &amp; Analytics</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Data Science, Data
+                    Analysis, Data Analytics</p>
+                <p class="lh-1"><a href="https://www.life-global.org/certificate/4c8e89e5-5168-4243-aa60-892c547d0cd0"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Ways to Build a Better LinkedIn Profile</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> LinkedIn, Branding,
+                    Networking, Building Connections, Professional Communication, Search Engine Optimization</p>
+                <p class="lh-1"><a href="https://www.coursera.org/account/accomplishments/verify/NNMOU4KVTX7Z"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Effective Leadership</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Leadership, Team
+                    Leadership, Leadership Development</p>
+                <p class="lh-1"><a href="https://www.life-global.org/certificate/12a67e2e-6389-4032-aa84-e95d802aa9b4"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Git, GitLab, GitHub Fundamentals for Software Developers</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Git, GitLab, GitHub
+                </p>
+                <p class="lh-1"><a href="https://www.udemy.com/certificate/UC-84734a82-aa1b-47da-85a3-afcd73edec2a/"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">HTML Certification</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> HTML, HTML5, HTML
+                    Scripting</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/1hngBZZg-d8mgqNXB6Y_KiBGQU_6qGdCV/view?usp=drivesdk"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Digital Design Foundations</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Design, Web Design,
+                    Graphic Design</p>
+                <p class="lh-1"><a
+                        href="https://visme.co/courses/wp-content/themes/courses/certificates/visme-certificate-37494273-19.pdf"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">HTML, CSS for Freshers!</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> HTML, HTML5, HTML
+                    Scripting, Cascading Style Sheets</p>
+                <p class="lh-1"><a href="https://www.udemy.com/certificate/UC-678f9487-177e-468b-9ecd-b85267b9ca61/"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">ChatGPT guided path</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> ChatGPT</p>
+                <p class="lh-1"><a
+                        href="https://ninjasfiles.s3.amazonaws.com/certificate-627188-c43d662645f2199db0679deb75892f20.pdf"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">Stock Market Fundamentals</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> Stock Market</p>
+                <p class="lh-1"><a href="https://learn.pwskills.com/certificate/90b12690-abbf-460c-8bfb-647867219448"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold">The quickstart guide to YouTube</p>
+                <p class="lh-1"><i class="bi bi-dot"></i><span class="fw-bold">Skills :</span> YouTube</p>
+                <p class="lh-1"><a
+                        href="https://drive.google.com/file/d/17NTUc4u9P9C-r8rZfy5wfNIGf8LNxYQQ/view?usp=drivesdk"
+                        target="_blank">Certificate <i class="bi bi-box-arrow-up-right"></i></a></p>
+            </div>
+        </div>
+
+        <div id="forYOU" class="p-3">
+            <p class="lh-1 fw-semibold"><i class="bi bi-pin-map-fill"></i> You're currently viewing this Portfolio
+                from : <span id="region" class="fw-bold"></span>
+            </p>
+            <p class="lh-1 fw-semibold"><i class="bi bi-stars"></i>Current Weather : <span id="weather"
+                    class="fw-bold"></span><img id="pic" src="" alt=""></p>
+        </div>
+    </main>
+
+    <footer class="text-center p-3">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/500px-Flag_of_India.svg.png"
+            alt="Flag" style="width: 5rem;"> -->
+        <p class="lh-base fw-semibold">&copy; 2025 Aryan Anand | All rights reserved<br>Created with <i
+                class="bi bi-filetype-html"></i> <i class="bi bi-filetype-css"></i> <i class="bi bi-filetype-js"></i> <i
+                class="bi bi-filetype-svg"></i> <i class="bi bi-filetype-json"></i> </p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="leetcode.js"></script>
+    <script type="module" src="location.js"></script>
+    <script type="module" src="weather.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

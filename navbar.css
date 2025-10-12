@@ -1,0 +1,24 @@
+@import url(style.css);
+
+.navbar {
+  background-color: var(--colour3);
+  position: sticky;
+  top: 0;
+  z-index: 250;
+}
+.navbar-brand {
+  /* font-weight: bolder; */
+  color: var(--colour1);
+  transition: color 0.5s linear;
+}
+.navbar-brand:hover {
+  color: azure;
+}
+.navbar-nav {
+  /* font-weight: bold; */
+  color: var(--colour2);
+}
+.nav-item:hover {
+  border-radius: 5px;
+  background-color: var(--colour4);
+}

@@ -1,0 +1,32 @@
+.card {
+  background-color: var(--colour5);
+  transform: translateY(0);
+  border-radius: 50%;
+  animation: pulse-shadow 2s ease-in-out infinite alternate;
+}
+@keyframes pulse-shadow {
+  /* 0% (Start state) - The 'down' state */
+  0% {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transform: translateY(0);
+  }
+
+  /* 50% (Mid-point) - The 'up' state, mimicking the hover */
+  50% {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transform: translateY(-5px);
+  }
+
+  /* 100% (End state) - Back to the 'down' state */
+  100% {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .card {
+    display: none;
+  }
+}
