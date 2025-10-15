@@ -255,6 +255,7 @@
             <img class="my-3 img-fluid" src="./Assets/HTML.png" alt="HTML">
             <img class="my-3 img-fluid" src="./Assets/Java.png" alt="Java">
             <img class="my-3 img-fluid" src="./Assets/React.png" alt="React">
+            <img class="my-3 img-fluid" src="./Assets/mySQL.png" alt="mySQL">
             <img class="my-3 img-fluid" src="./Assets/GitLab.png" alt="GitLab">
             <img class="my-3 img-fluid" src="./Assets/GitHub.png" alt="GitHub">
             <img class="my-3 img-fluid" src="./Assets/Node Js.png" alt="Node.js">
@@ -301,12 +302,55 @@
             <h3 class="fw-bold alan-sans-500"><i class="bi bi-stars"></i> Coding &amp; Development</h3>
             <br>
             <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> AtCoder <a
+                        href="https://atcoder.jp/users/aryan_anand" target="_blank"><i
+                            class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+                <ul id="atcoder-list">
+                    <!-- AtCoder data will go here -->
+                </ul>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
                 <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> Leetcode <a
                         href="https://leetcode.com/u/a_r_y_a_n_anand/" target="_blank"><i
                             class="bi bi-box-arrow-up-right"></i></a>
                 </p>
                 <ul id="leetcode-list">
-                    <!-- Leetcode data will be here -->
+                    <!-- Leetcode data will go here -->
+                </ul>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> Codechef <a
+                        href="https://www.codechef.com/users/aryan_anand_25" target="_blank"><i
+                            class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+                <ul id="codechef-list">
+                    <!-- Codechef data will go here -->
+                </ul>
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> Codeforces <a
+                        href="https://codeforces.com/profile/a_r_y_a_n_anand" target="_blank"><i
+                            class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+                <ul id="codeforces-list">
+                    <!-- Codeforces data will go here -->
+                </ul>
+                <canvas id="myLineChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+
+            </div>
+            <hr>
+            <div class="p-0 fw-semibold">
+                <p class="lh-1 fs-5 fw-bold"><i class="bi bi-code-slash"></i> GeeksforGeeks <a
+                        href="https://www.geeksforgeeks.org/user/aryan_anand/" target="_blank"><i
+                            class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+                <ul id="gfg-list">
+                    <!-- GeeksforGeeks data will go here -->
                 </ul>
             </div>
         </div>
@@ -434,11 +478,11 @@
         </div>
 
         <div id="forYOU" class="p-3">
+            <p class="lh-1 fw-semibold"><i class="bi bi-stars"></i>Current Weather : <span id="weather"
+                    class="fw-bold"></span><img id="pic" src="" alt=""></p>
             <p class="lh-1 fw-semibold"><i class="bi bi-pin-map-fill"></i> You're currently viewing this Portfolio
                 from : <span id="region" class="fw-bold"></span>
             </p>
-            <p class="lh-1 fw-semibold"><i class="bi bi-stars"></i>Current Weather : <span id="weather"
-                    class="fw-bold"></span><img id="pic" src="" alt=""></p>
         </div>
     </main>
 
@@ -450,8 +494,11 @@
                 class="bi bi-filetype-svg"></i> <i class="bi bi-filetype-json"></i> </p>
     </footer>
 
+    <script src="chart.js"></script>
     <script src="script.js"></script>
     <script src="leetcode.js"></script>
+    <script src="codeforces.js"></script>
+    <script src="gfg.js"></script>
     <script type="module" src="location.js"></script>
     <script type="module" src="weather.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
