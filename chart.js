@@ -3,13 +3,19 @@ const ctx = document.getElementById("myLineChart");
 function TimeFormatter(contestTimestampSeconds) {
   const contestTimestampMilliseconds = contestTimestampSeconds * 1000;
   const dateObject = new Date(contestTimestampMilliseconds);
-  const year = dateObject.getFullYear();
+  const fullYear = dateObject.getFullYear();
+  const year = fullYear.toString().slice(-2);
   const month = (dateObject.getMonth() + 1).toString().padStart(2, "0");
   const day = dateObject.getDate().toString().padStart(2, "0");
   const customDate = `${month}-${year}`;
-  console.log(customDate);
   return customDate;
 }
+
+// Example usage (assuming an arbitrary timestamp):
+// For a timestamp corresponding to 2025-09-24
+// (the date you mentioned in your profile, which is a neat coincidence!)
+// let exampleTimestamp = 1758787200; // Sept 24, 2025 in seconds
+// TimeFormatter(exampleTimestamp); // Output: "09-25"
 
 CodeforcesData();
 async function CodeforcesData() {
