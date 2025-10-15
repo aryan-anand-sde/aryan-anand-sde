@@ -1,4 +1,4 @@
-async function FetchLeecodeData() {
+async function FetchLeetcodeData() {
   let url = "https://leetcode-api-faisalshohag.vercel.app/a_r_y_a_n_anand";
   let response = await fetch(url);
   let data = await response.json();
@@ -22,4 +22,4 @@ async function FetchLeecodeData() {
   leetcodeList.appendChild(newItem);
 }
 
-FetchLeecodeData();
+FetchLeetcodeData();
