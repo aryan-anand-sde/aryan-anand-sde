@@ -16,16 +16,16 @@ async function CodeforcesChart() {
   let response = await fetch(url);
   let kaamKeCheez = await response.json();
 
-  let dot = ["Start"];
+  let yAxis = ["Start"];
   let contestRating = [0];
   let len = await kaamKeCheez.result.length;
   for (let i = 0; i < len; i++)
     contestRating.push(kaamKeCheez.result[i].newRating);
   for (let i = 0; i < len; i++)
-    dot.push(TimeFormatter(kaamKeCheez.result[i].ratingUpdateTimeSeconds));
+    yAxis.push(TimeFormatter(kaamKeCheez.result[i].ratingUpdateTimeSeconds));
 
   let data = {
-    labels: dot,
+    labels: yAxis,
     datasets: [
       {
         label: "Rating",
@@ -71,7 +71,7 @@ async function CodeforcesChart() {
 const cc = document.getElementById("codechefChart");
 CodechefChart();
 function CodechefChart() {
-  let dot = [
+  let yAxis = [
     "Start",
     "08-25",
     "08-25",
@@ -85,7 +85,7 @@ function CodechefChart() {
   let contestRating = [0, 916, 994, 1046, 1071, 1136, 1203, 1233, 1282];
 
   let data = {
-    labels: dot,
+    labels: yAxis,
     datasets: [
       {
         label: "Rating",
@@ -113,7 +113,7 @@ function CodechefChart() {
         },
         title: {
           display: true,
-          text: "Codeforces Rating Curve",
+          text: "Codechef Rating Curve",
         },
       },
       scales: {
