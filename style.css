@@ -14,7 +14,7 @@ a {
 }
 hr {
   border: double;
-  border-color: var(--colour5);
+  border-color: white;
 }
 .container {
   border: 3px solid var(--colour3);
