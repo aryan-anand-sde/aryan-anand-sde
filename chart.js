@@ -6,7 +6,7 @@ function TimeFormatter(contestTimestampSeconds) {
   const year = dateObject.getFullYear();
   const month = (dateObject.getMonth() + 1).toString().padStart(2, "0");
   const day = dateObject.getDate().toString().padStart(2, "0");
-  const customDate = `${day}-${month}-${year}`;
+  const customDate = `${month}-${year}`;
   console.log(customDate);
   return customDate;
 }
