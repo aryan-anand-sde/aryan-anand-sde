@@ -1,4 +1,7 @@
-// Time();
+setInterval(() => {
+  Time();
+}, 1000);
+
 function Time() {
   let now = new Date();
   let hours = now.getHours();
@@ -23,14 +26,6 @@ function Time() {
     "December",
   ];
   let year = now.getFullYear();
-  Display(hours, minutes, AMPM, day, monthNames[month], year);
-}
-
-setInterval(() => {
-  Time();
-}, 1000);
-
-async function Display(hour, minute, AMPM, day, month, year) {
   let time = document.getElementById("time");
-  time.innerHTML = `${hour}:${minute} ${AMPM} on ${day} - ${month}, ${year}`;
+  time.innerHTML = `${hours}:${minutes} ${AMPM}, ${day} - ${monthNames[month]}, ${year}`;
 }
