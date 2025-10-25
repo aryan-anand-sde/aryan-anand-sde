@@ -1,9 +1,7 @@
-import { LocationData } from "./location.js";
+import { LocationData } from "./Location.js";
 
 Info();
-
 async function Info() {
-  console.log("Getting location data...");
   try {
     let data = await LocationData();
     let lat = data.latitude;
