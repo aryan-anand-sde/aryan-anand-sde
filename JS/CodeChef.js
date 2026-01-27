@@ -2,15 +2,15 @@ async function FetchCodechefData() {
   const gfgList = document.getElementById("codechef-list");
 
   let newItem = document.createElement("li");
-  newItem.innerHTML = "1 &star; Coder";
+  newItem.innerHTML = "&star; Coder";
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = "Current Rating  : 1282";
+  newItem.textContent = "Current Rating  : 1390";
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = `Max Rank : ${data.result[0].maxRank}`;
+  newItem.textContent = "Global Rank : 46668";
   gfgList.appendChild(newItem);
 }
 
