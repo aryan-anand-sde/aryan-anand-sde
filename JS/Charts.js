@@ -12,8 +12,8 @@ function TimeFormatter(contestTimestampSeconds) {
 const ac = document.getElementById("atCoderChart");
 AtCoderChart();
 function AtCoderChart() {
-  let yAxis = ["Start", "08-25", "08-25", "09-25", "01-26"];
-  let contestRating = [0, 10, 17, 38, 67];
+  const yAxis = ["Start", "08-25", "08-25", "09-25", "01-26"];
+  const contestRating = [0, 10, 17, 38, 67];
 
   let data = {
     labels: yAxis,
@@ -62,7 +62,7 @@ function AtCoderChart() {
 const cc = document.getElementById("codechefChart");
 CodechefChart();
 function CodechefChart() {
-  let yAxis = [
+  const yAxis = [
     "Start",
     "08-25",
     "08-25",
@@ -72,8 +72,13 @@ function CodechefChart() {
     "09-25",
     "09-25",
     "10-25",
+    "11-25",
+    "11-25",
+    "01-26",
   ];
-  let contestRating = [0, 916, 994, 1046, 1071, 1136, 1203, 1233, 1282];
+  const contestRating = [
+    1000, 916, 994, 1046, 1071, 1136, 1203, 1233, 1282, 1319, 1359, 1390,
+  ];
 
   let data = {
     labels: yAxis,
@@ -122,17 +127,17 @@ function CodechefChart() {
 const cf = document.getElementById("codeforcesChart");
 CodeforcesChart();
 async function CodeforcesChart() {
-  let url = "https://codeforces.com/api/user.rating?handle=a_r_y_a_n_anand";
+  const url = "https://codeforces.com/api/user.rating?handle=a_r_y_a_n_anand";
   let response = await fetch(url);
   let kaamKeCheez = await response.json();
 
   let yAxis = ["Start"];
   let contestRating = [0];
   let len = await kaamKeCheez.result.length;
-  for (let i = 0; i < len; i++)
+  for (let i = 0; i < len; i++) {
     contestRating.push(kaamKeCheez.result[i].newRating);
-  for (let i = 0; i < len; i++)
     yAxis.push(TimeFormatter(kaamKeCheez.result[i].ratingUpdateTimeSeconds));
+  }
 
   let data = {
     labels: yAxis,
