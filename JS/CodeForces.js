@@ -5,16 +5,18 @@ async function FetchCodeforcesData() {
 
   const gfgList = document.getElementById("codeforces-list");
 
-  let newItem = document.createElement("li");
+  newItem = document.createElement("li");
+  newItem.textContent = `Max Rating : ${data.result[0].maxRating}`;
+  gfgList.appendChild(newItem);
+  newItem = document.createElement("li");
   newItem.textContent = `Current Rating : ${data.result[0].rating}`;
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = `Max Rating : ${data.result[0].maxRating}`;
-  gfgList.appendChild(newItem);
-
-  newItem = document.createElement("li");
   newItem.textContent = `Max Rank : ${data.result[0].maxRank}`;
+  gfgList.appendChild(newItem);
+  newItem = document.createElement("li");
+  newItem.textContent = `Current Rank : ${data.result[0].rank}`;
   gfgList.appendChild(newItem);
 }
 
