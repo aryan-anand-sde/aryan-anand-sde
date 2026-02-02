@@ -182,3 +182,53 @@ async function CodeforcesChart() {
     },
   });
 }
+
+const lc = document.getElementById("leetcodeChart");
+LeetcodeChart();
+async function LeetcodeChart() {
+  const yAxis = ["Start", "08-25", "08-25", "11-25"];
+  const contestRating = [1500, 1415, 1357, 1360];
+
+  let data = {
+    labels: yAxis,
+    datasets: [
+      {
+        label: "Rating",
+        data: contestRating,
+        // --- Line Specific Styling ---
+        borderColor: "#0077b6", // Color of the line
+        backgroundColor: "#00b4d8", // Color under the line (optional)
+        tension: 0.25, // Smoothness of the line (0 is sharp, 0.4 is smooth)
+        fill: true, // Fills the area under the line
+        pointRadius: 5, // Size of the data points
+        pointHoverRadius: 9, // Size of data points on hover
+      },
+    ],
+  };
+
+  new Chart(lc, {
+    type: "line",
+    data: data,
+    options: {
+      // Optional configuration options
+      responsive: true,
+      plugins: {
+        legend: {
+          display: false,
+        },
+        title: {
+          display: true,
+          text: "Leetcode Rating Curve",
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          title: {
+            display: false,
+          },
+        },
+      },
+    },
+  });
+}
