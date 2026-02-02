@@ -6,6 +6,10 @@ async function FetchLeetcodeData() {
   const leetcodeList = document.getElementById("leetcode-list");
 
   let newItem = document.createElement("li");
+  newItem.textContent = "Current Rating : 1360";
+  leetcodeList.appendChild(newItem);
+
+  newItem = document.createElement("li");
   newItem.textContent = `Total Questions Solved : ${data.totalSolved} out of ${data.totalQuestions}`;
   leetcodeList.appendChild(newItem);
 
