@@ -5,9 +5,9 @@ newItem.innerHTML = "Gray Coder";
 atCoderList.appendChild(newItem);
 
 newItem = document.createElement("li");
-newItem.textContent = "Rated Matches  : 4";
+newItem.textContent = "Rated Matches  : 5";
 atCoderList.appendChild(newItem);
 
 newItem = document.createElement("li");
-newItem.textContent = "Current Rating  : 67 (12 Kyu)";
+newItem.textContent = "Current Rating  : 110 (11 Kyu)";
 atCoderList.appendChild(newItem);

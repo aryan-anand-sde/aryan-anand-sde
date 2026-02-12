@@ -12,8 +12,8 @@ function TimeFormatter(contestTimestampSeconds) {
 const ac = document.getElementById("atCoderChart");
 AtCoderChart();
 function AtCoderChart() {
-  const yAxis = ["Start", "08-25", "08-25", "09-25", "01-26"];
-  const contestRating = [0, 10, 17, 38, 67];
+  const yAxis = ["Start", "08-25", "08-25", "09-25", "01-26", "02-26"];
+  const contestRating = [0, 10, 17, 38, 67, 110];
 
   let data = {
     labels: yAxis,
