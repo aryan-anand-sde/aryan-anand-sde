@@ -27,5 +27,5 @@ function Time() {
   ];
   let year = now.getFullYear();
   let time = document.getElementById("time");
-  time.innerHTML = `${hours}:${minutes} ${AMPM}, ${day} - ${monthNames[month]}, ${year}`;
+  time.innerHTML = `${hours}:${minutes} ${AMPM}, ${day} ${monthNames[month]}, ${year}`;
 }
