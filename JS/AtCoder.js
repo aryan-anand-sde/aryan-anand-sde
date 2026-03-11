@@ -9,5 +9,9 @@ newItem.textContent = "Rated Matches  : 5";
 atCoderList.appendChild(newItem);
 
 newItem = document.createElement("li");
+newItem.textContent = "Global Rank  : 61794";
+atCoderList.appendChild(newItem);
+
+newItem = document.createElement("li");
 newItem.textContent = "Current Rating  : 110 (11 Kyu)";
 atCoderList.appendChild(newItem);
