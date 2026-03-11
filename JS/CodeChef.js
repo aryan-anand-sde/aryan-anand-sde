@@ -6,15 +6,15 @@ async function FetchCodechefData() {
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = "Current Rating  : 1438";
+  newItem.textContent = "Current Rating  : 1440";
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = "Global Rank : 36908";
+  newItem.textContent = "Global Rank : 36295";
   gfgList.appendChild(newItem);
 
   newItem = document.createElement("li");
-  newItem.textContent = "Country Rank : 34234";
+  newItem.textContent = "Country Rank : 33672";
   gfgList.appendChild(newItem);
 }
 
