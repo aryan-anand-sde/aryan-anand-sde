@@ -37,3 +37,12 @@ hr {
 #skills img {
   height: 5rem;
 }
+
+.modal-color-1 {
+  color: var(--colour1);
+  background-color: var(--colour3);
+}
+.modal-color-2 {
+  color: var(--colour2);
+  background-color: var(--colour5);
+}
